@@ -1,0 +1,82 @@
+/* Reset básico y tipografía */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f9f6f0;
+    color: #2c3e50;
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 32px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Encabezados principales */
+h2 {
+    color: #d35400;
+    font-size: 1.5rem;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #f39c12;
+    padding-bottom: 6px;
+}
+
+body > h2:first-of-type {
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+/* Lista de viñetas con características */
+ul {
+    list-style: none;
+    margin-bottom: 16px;
+}
+
+ul li {
+    background-color: #fff8e7;
+    color: #4a3b32;
+    margin-bottom: 8px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    border-left: 4px solid #e67e22;
+}
+
+ul li::before {
+    content: "✓";
+    color: #27ae60;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Texto descriptivo */
+h1 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #555555;
+    background-color: #f8f9fa;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    text-align: center;
+}
+
+/* Estilos para la imagen del producto y clase .CCP */
+img, .CCP {
+    display: block;
+    max-width: 100%;
+    width: 300px; /* Ajusta según el tamaño deseado (ej. 67px o 300px) */
+    height: auto;
+    margin: 16px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
